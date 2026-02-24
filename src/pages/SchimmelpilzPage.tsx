@@ -90,8 +90,8 @@ export default function SchimmelpilzPage() {
             >
               <div className="rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="/mold.jpg"
-                  alt="Schimmelpilzbeseitigung"
+                  src="/schimmelpilz.jpg"
+                  alt="Schimmelpilz an der Wand"
                   className="w-full h-80 lg:h-96 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-primary/30 to-transparent" />

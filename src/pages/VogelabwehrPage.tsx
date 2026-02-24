@@ -80,8 +80,8 @@ export default function VogelabwehrPage() {
             >
               <div className="rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="/pigeons.jpg"
-                  alt="Vogelabwehr und Taubenvertreibung"
+                  src="/vogelabwehr.jpg"
+                  alt="Tauben auf Gebäude - Vogelabwehr"
                   className="w-full h-80 lg:h-96 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-primary/30 to-transparent" />

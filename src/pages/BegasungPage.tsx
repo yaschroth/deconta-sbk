@@ -74,8 +74,8 @@ export default function BegasungPage() {
             >
               <div className="rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="/fumigation.jpg"
-                  alt="Professionelle Begasung"
+                  src="/begasung.jpg"
+                  alt="Begasung und Schädlingsbekämpfung"
                   className="w-full h-80 lg:h-96 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-primary/30 to-transparent" />

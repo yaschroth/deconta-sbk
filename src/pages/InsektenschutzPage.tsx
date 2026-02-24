@@ -75,8 +75,8 @@ export default function InsektenschutzPage() {
             >
               <div className="rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="/wasp.jpg"
-                  alt="Insektenschutz und Wespenabwehr"
+                  src="/insektenschutz.jpg"
+                  alt="Wespen und Insektenbekämpfung"
                   className="w-full h-80 lg:h-96 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-primary/30 to-transparent" />
