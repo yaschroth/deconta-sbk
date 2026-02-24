@@ -50,27 +50,44 @@ export default function VogelabwehrPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-16 pb-24 bg-gradient-to-b from-blue-50 to-white">
+      <section className="pt-12 pb-20 bg-gradient-to-b from-blue-50 to-white overflow-hidden">
         <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="max-w-4xl mx-auto text-center"
-          >
-            <div className="inline-flex items-center gap-2 mb-6 badge-trust">
-              <Bird className="size-4 text-brand-accent" />
-              <span className="text-slate-600">Professionelle Vogelabwehr</span>
-            </div>
-            <h1 className="text-4xl lg:text-5xl font-bold text-brand-primary mb-6">
-              Vogelabwehr & Taubenvertreibung
-            </h1>
-            <p className="text-xl text-slate-600 mb-8">
-              Effektive und tierfreundliche Lösungen gegen Tauben und andere Vögel. Schutz für Gebäude, Fassaden und Außenanlagen.
-            </p>
-            <a href={CONFIG.phoneLink} className="inline-flex items-center gap-2 bg-brand-primary hover:bg-brand-secondary text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors shadow-xl">
-              <Phone className="size-5" /> Beratung: {CONFIG.phone}
-            </a>
-          </motion.div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="inline-flex items-center gap-2 mb-6 badge-trust">
+                <Bird className="size-4 text-brand-accent" />
+                <span className="text-slate-600">Professionelle Vogelabwehr</span>
+              </div>
+              <h1 className="text-4xl lg:text-5xl font-bold text-brand-primary mb-6">
+                Vogelabwehr & Taubenvertreibung
+              </h1>
+              <p className="text-xl text-slate-600 mb-8">
+                Effektive und tierfreundliche Lösungen gegen Tauben und andere Vögel. Schutz für Gebäude, Fassaden und Außenanlagen.
+              </p>
+              <a href={CONFIG.phoneLink} className="inline-flex items-center gap-2 bg-brand-primary hover:bg-brand-secondary text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors shadow-xl">
+                <Phone className="size-5" /> Beratung: {CONFIG.phone}
+              </a>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+              className="relative"
+            >
+              <div className="rounded-3xl overflow-hidden shadow-2xl">
+                <img
+                  src="/pigeons.jpg"
+                  alt="Vogelabwehr und Taubenvertreibung"
+                  className="w-full h-80 lg:h-96 object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-primary/30 to-transparent" />
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
